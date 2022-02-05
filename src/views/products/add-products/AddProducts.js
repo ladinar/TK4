@@ -22,6 +22,7 @@ export const defaultForm = {
   hobi: [],
   komentar: '',
   gmaps: [],
+  alamat: '',
 }
 
 export const defaultHobby = [
@@ -145,6 +146,17 @@ const CustomStyles = () => {
           required
         />
         <CFormFeedback invalid>Isi terlebih dahulu Jenis Kelamin!</CFormFeedback>
+      </CCol>
+      <CCol md={12}>
+        <CFormLabel htmlFor="validationDescription">Alamat</CFormLabel>
+        <CFormTextarea
+          id="validationDescription"
+          placeholder="Isi Alamat anda dengan benar"
+          value={form.alamat}
+          onChange={(e) => setForm({ ...form, komentar: e.target.value })}
+          required
+        ></CFormTextarea>
+        <CFormFeedback invalid>Please enter an address!</CFormFeedback>
       </CCol>
       <CCol md={12}>
         <CFormLabel htmlFor="validationDescription">Hobi</CFormLabel>

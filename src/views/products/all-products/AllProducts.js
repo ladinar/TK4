@@ -45,6 +45,7 @@ const AllProducts = () => {
                       <CTableHeaderCell scope="col">No</CTableHeaderCell>
                       <CTableHeaderCell scope="col">Nama Lengkap</CTableHeaderCell>
                       <CTableHeaderCell scope="col">NIM</CTableHeaderCell>
+                      <CTableHeaderCell scope="col">Alamat</CTableHeaderCell>
                       <CTableHeaderCell scope="col">Hobi</CTableHeaderCell>
                       <CTableHeaderCell scope="col">Jenis Kelamin</CTableHeaderCell>
                       <CTableHeaderCell scope="col">Komentar</CTableHeaderCell>
@@ -58,6 +59,7 @@ const AllProducts = () => {
                           <CTableDataCell key={product.id}>{index + 1}</CTableDataCell>
                           <CTableDataCell>{product.nama}</CTableDataCell>
                           <CTableDataCell>{product.nim}</CTableDataCell>
+                          <CTableDataCell>{product.alamat}</CTableDataCell>
                           <CTableDataCell className="space-x-1">
                             {product.hobi.join(',')}
                           </CTableDataCell>
