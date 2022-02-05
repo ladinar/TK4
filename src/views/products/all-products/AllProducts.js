@@ -1,7 +1,6 @@
 import React from 'react'
 import AddProducts from '../add-products/AddProducts'
 import {
-  CButton,
   CCard,
   CCardBody,
   CCardHeader,
@@ -13,9 +12,6 @@ import {
   CTableHead,
   CTableHeaderCell,
   CTableRow,
-  CCardImage,
-  CCardTitle,
-  CCardText,
 } from '@coreui/react'
 import { useState, useEffect } from 'react'
 import supabase from 'src/components/helpers/supabase'
