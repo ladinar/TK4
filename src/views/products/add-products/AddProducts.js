@@ -1,7 +1,6 @@
-import { React, useState, useEffect } from 'react'
+import { useState, useEffect, React } from 'react'
 import Select from 'react-select'
 import supabase from 'src/components/helpers/supabase'
-import { ToastContainer, toast } from 'react-toastify'
 import {
   CButton,
   CCard,
@@ -46,7 +45,7 @@ const CustomStyles = () => {
     } else {
       setForm({ ...form, gmaps: [0, 0] })
     }
-  }, [])
+  }, [form])
   function setHobi(arr) {
     const hobi = arr.map((item) => item.label)
     setForm({ ...form, hobi })
@@ -185,7 +184,6 @@ const CustomStyles = () => {
           Reset
         </CButton>
       </CCol>
-      <ToastContainer theme="colored" />
     </CForm>
   )
 }
