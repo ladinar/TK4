@@ -118,7 +118,7 @@ const CustomStyles = () => {
         <CFormInput
           type="number"
           placeholder="Isi dengan NIM anda"
-          id="validationProductName"
+          id="validationProductNim"
           value={form.nim}
           onChange={(e) => setForm({ ...form, nim: e.target.value })}
           required
@@ -150,10 +150,10 @@ const CustomStyles = () => {
       <CCol md={12}>
         <CFormLabel htmlFor="validationDescription">Alamat</CFormLabel>
         <CFormTextarea
-          id="validationDescription"
+          id="validationAlamat"
           placeholder="Isi Alamat anda dengan benar"
           value={form.alamat}
-          onChange={(e) => setForm({ ...form, komentar: e.target.value })}
+          onChange={(e) => setForm({ ...form, alamat: e.target.value })}
           required
         ></CFormTextarea>
         <CFormFeedback invalid>Please enter an address!</CFormFeedback>
